@@ -1420,10 +1420,6 @@ input[type=radio]:checked{
   flex-direction: column;
   gap: 8px;
 }
-.contact__leave textarea {
-  resize: none;
-  padding: 0.6em;
-}
 .contact__leave input[type=email] {
   padding: 0 0.6em;
   height: 48px;
@@ -1443,6 +1439,10 @@ input[type=radio]:checked{
 }
 .contact__leave button:focus-visible {
   outline: 4px solid var(--color-sub);
+}
+@font-face{
+  font-family: "MyNtoSans";
+  src: url(./fonts/NotoSansKR-Black.otf);
 }
 
 @media (max-width: 768px) {
