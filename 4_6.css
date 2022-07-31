@@ -1,0 +1,47 @@
+
+body { padding: 24px; }
+
+section {
+  padding: 16px;
+  background-color: lightgray;
+  margin: 1em; padding: 1em;
+}
+
+.blue, .red {
+  height: 200px; line-height: 200px;
+  font-size: 1.4em;
+  text-align: center;
+  color: white;
+}
+
+.blue {
+  float: left;
+  width: 200px;
+  background-color: slateblue;
+}
+
+.red {
+  float: left;
+  width: calc(100% - 200px);
+  background-color: tomato;
+}
+
+/* 1. 마지막에 clear된 빈 블록 요소 두기 */
+/* 불필요한 html 요소 추가 */
+/* .empty {
+  clear: both;
+} */
+
+/* 2. 부모에 overflow 속성 활용 */
+/* 부모 밖으로 나타나야 할 요소가 있는 경우 한계 */
+/* section {
+  overflow: hidden;
+} */
+
+/* 3. 가상의 요소 두기 */
+/* 가장 널리 사용되는 방법 */
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}

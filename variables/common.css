@@ -1,0 +1,26 @@
+/* 특정 요소에서만 사용될 수 있는 변수 */
+u {
+  --not-good: wavy underline orange;
+  --wrong: wavy underline red;
+}
+.wrong {
+  --warn: yellow;
+}
+
+/* 모든 요소들에서 사용될 수 있는 변수 */
+:root {
+  --font-small: 8px;
+  --font-normal: 16px;
+  --font-large: 24px;
+  --font-x-large: 32px;
+  --font-xx-large: 40px;
+  --font-xxx-large: 48px;
+
+  --font-w-normal: 400;
+  --font-w-bold: 600;
+  --font-w-extrabold: 900;
+
+  --color-main: #FF4200;
+  --color-sub: #865A55;
+  --color-text: #49281C;
+}

@@ -1,0 +1,82 @@
+/* 속성 값을 기준으로 선택 */
+a[href="https://www.yalco.kr"] {
+  color: #ff4e00;
+  font-weight: bold;
+}
+
+/* 특정 속성이 있는 요소 선택 */
+input[disabled]+label {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+/* 속성값이 특정 텍스트를 포함하는 요소 */
+span[class*="item"] {
+  text-decoration: underline;
+}
+
+/* 속성값이 특정 텍스트로 시작하는 요소 */
+span[class^="fruit"] {
+  color: tomato;
+}
+span[class^="vege"] {
+  color: olivedrab;
+}
+
+/* 속성값이 특정 텍스트로 끝나는 요소 */
+span[class$="-1"] {
+  font-weight: bold;
+}
+a:hover{
+  background-color: yellow;
+}
+a:active{
+  background-color: aqua;
+}
+input[type=radio]:checked+label{
+  color:tomato;
+  font-weight: bold;
+}
+input[type=radio]:enabled+label{
+  text-decoration: underline;
+}
+input[type=radio]:disabled+label{
+  color:lightgray;
+  text-decoration:line-through;
+}
+
+
+
+
+
+
+/* 인풋 등이 클릭되어 포커스된(입력을 받는) 상태 */
+input[type="text"]:focus {
+  /* border 밖의 선 (박스 요소가 아님) */
+  outline: 2px solid dodgerblue;
+}
+/* 필수 입력요소 */
+input:required {
+  border-color: orangered;
+}
+/* 값이 유효한 입력요소 */
+input[type="email"]:valid {
+  border-color: green;
+}
+/* 값이 무효한 입력요소 */
+input[type="email"]:not(:valid) {
+  border-color: purple;
+}
+
+[class*="focus"]:focus {
+  outline: 2px solid deeppink;
+}
+.tab-focus:focus,
+.no-focus:focus {
+  outline: none;
+}
+/* 탭으로 포커스된 요소에 적용 */
+/* 브라우저 지원 확인 */
+[class*="tab-focus"]:focus-visible {
+  outline: 2px solid dodgerblue;
+}

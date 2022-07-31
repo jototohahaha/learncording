@@ -1,0 +1,27 @@
+p {
+  background-color: lightblue;
+  margin: 24px;
+  padding: 24px;
+}
+
+p.special {
+  margin-top: 48px;
+  /* margin-bottom: */
+  /* margin-left: */
+  /* margin-right: */
+
+  /* padding-top */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-right */
+}
+body{
+  text-align:right;
+}
+div{
+  display: inline-block;
+  width: 200px;
+  height:200px;
+  background-color:orangered;
+  /* margin: 0 auto; */
+}

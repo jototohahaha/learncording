@@ -1,0 +1,19 @@
+.outer{
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.with-bg{
+  height: 100%;
+  background-image:url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+  background-size: cover;
+}
+.linear {
+  width: 200px; height: 200px;
+  background: 
+    linear-gradient(217deg, red, transparent 60%),
+    linear-gradient(127deg, lime, transparent 60%),
+    linear-gradient(336deg, blue, transparent 60%);
+}

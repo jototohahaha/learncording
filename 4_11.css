@@ -1,0 +1,24 @@
+@media(max-width:768px){
+  nav{
+    display: none;
+  }
+  #menu:hover +nav{
+    display:inherit;
+  }
+  nav ul li{
+    display: block;
+    text-align: right;
+    padding:0.5em;
+  }
+}
+@media(min-width:769px){
+  #menu{
+    display:none;
+  }
+  #wrapper{
+    grid-template-columns: 200px 1fr;
+  }
+  header, footer{
+    grid-column: 1/-1;
+  }
+}

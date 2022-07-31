@@ -1,0 +1,40 @@
+button._1:hover{
+  background-color: darkorchid;
+  border-radius: 32px;
+}
+button._1{
+  transition:all 500ms;
+}
+
+button._2:hover{
+  animation: my-anim 200ms;
+}
+
+@keyframes my-anim {
+  from {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(104%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
+#loading > div{
+  transform: skewx(-20deg);
+  animation-name:move-right;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move-right{
+  from{
+    left:-600px;
+  }
+  to{
+    left:0;
+  }
+}
